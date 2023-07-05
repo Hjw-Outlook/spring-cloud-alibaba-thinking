@@ -26,4 +26,10 @@ public class ActivityInfoController {
         return activityInfoService.searchTeacherInfoById(id);
     }
 
+    @GetMapping("insertActivityInfo")
+    public ActivityInfo insertActivityInfo() {
+        return activityInfoService.insertActivityInfo();
+    }
+
+
 }

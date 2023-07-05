@@ -1,7 +1,6 @@
 package com.hjw.model;
 
 
-import java.io.Serial;
 import java.io.Serializable;
 
 /**
@@ -12,7 +11,6 @@ import java.io.Serializable;
  */
 public class LtcUserInfoModel implements Serializable {
 
-    @Serial
     private static final long serialVersionUID = -6324709733120271920L;
     
     private Long id;

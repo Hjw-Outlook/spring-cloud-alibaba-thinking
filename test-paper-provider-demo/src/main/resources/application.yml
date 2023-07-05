@@ -35,3 +35,24 @@ mybatis-plus:
     call-setters-on-nulls: true
     # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+seata:
+  enabled: true
+  tx-service-group: test-paper-provider-demo-group
+  data-source-proxy-mode: AT
+  service:
+    vgroup-mapping:
+      test-paper-provider-demo-group: default
+    grouplist:
+      default: 127.0.0.1:8091
+  registry:
+    nacos:
+      server-addr: localhost:8848
+      username: nacos
+      password: nacos
+      group: SEATA_GROUP
+  config:
+    nacos:
+      server-addr: localhost:8848
+      username: nacos
+      password: nacos
+      group: SEATA_GROUP

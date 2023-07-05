@@ -13,4 +13,5 @@ public interface TestPaperInfoService {
     TestPaperInfo searchTestPaperInfoById(Long id);
 
 
+    TestPaperInfo insertTestPaperInfo();
 }

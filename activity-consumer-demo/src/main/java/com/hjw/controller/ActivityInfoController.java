@@ -26,4 +26,6 @@ public class ActivityInfoController {
     public ActivityInfoModel searchActivityInfoById(@PathVariable Long id) {
         return activityInfoFeignService.searchActivityInfoById(id);
     }
+
+
 }

@@ -16,4 +16,7 @@ public interface TeacherInfoFeignService {
 
     @GetMapping("/teacherInfo/teachStudent")
     String teachStudent(@RequestParam(required = false) Long id);
+
+    @GetMapping("/teach/teacherWorkingBySeata")
+    String teacherWorking();
 }

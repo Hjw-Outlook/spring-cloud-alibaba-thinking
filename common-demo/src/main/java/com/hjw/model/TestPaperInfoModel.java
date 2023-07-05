@@ -2,7 +2,6 @@ package com.hjw.model;
 
 import com.hjw.base.BaseModel;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 /**
@@ -13,16 +12,15 @@ import java.io.Serializable;
  */
 public class TestPaperInfoModel extends BaseModel implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7910200700342528914L;
-    
+    private static final long serialVersionUID = -7338001197516237396L;
+
     private Long id;
 
     private String name;
 
-    private String subject;
+    private String context;
 
-    private String position;
+    private String paperRange;
 
 
 
@@ -42,20 +40,19 @@ public class TestPaperInfoModel extends BaseModel implements Serializable {
         this.name = name;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getContext() {
+        return context;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setContext(String context) {
+        this.context = context;
     }
 
-    public String getPosition() {
-        return position;
+    public String getPaperRange() {
+        return paperRange;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public void setPaperRange(String paperRange) {
+        this.paperRange = paperRange;
     }
-
 }

@@ -57,13 +57,14 @@ public class TeacherInfoServiceImpl implements TeacherInfoService {
             student = student.getInitInstance();
             student.setTeacherId(teacherInfo.getId());
             //studentInfoService.insertStudentInfo(student);
+            // 若是需要使用aopContext的话则需要在启动类增加启动Aop代理类
         TeacherInfoService teacherInfoService = (TeacherInfoService)AopContext.currentProxy();
         teacherInfoService.insertStudentInfo(student);
         } catch (Exception e) {}
 
-        int i = 1/0;
+        //int i = 1/0;
 
-        return "1";
+        return "success";
     }
 
     @Transactional(propagation = Propagation.NESTED)

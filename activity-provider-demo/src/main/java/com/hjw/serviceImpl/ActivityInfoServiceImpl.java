@@ -27,5 +27,21 @@ public class ActivityInfoServiceImpl implements ActivityInfoService {
         return activityInfoMapper.selectById(id);
     }
 
+    @Transactional
+    @Override
+    public ActivityInfo insertActivityInfo() {
+        ActivityInfo activityInfo = new ActivityInfo();
+        activityInfo.setName("课外阅读");
+        activityInfo.setContext("读书");
+        activityInfo.setLocaltion("图书馆");
+        activityInfo.setDeletedFlag(false);
+        activityInfo.setCreateBy(-1L);
+        activityInfo.setCreateAt(new Date());
+        activityInfo.setUpdateBy(-1L);
+        activityInfo.setUpdateAt(new Date());
+        activityInfoMapper.insert(activityInfo);
+        return activityInfo;
+    }
+
 
 }

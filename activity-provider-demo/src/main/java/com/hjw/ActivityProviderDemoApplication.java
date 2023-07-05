@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * @PackageClassName: com.hjw.TeacherProviderDemoApplication
@@ -14,8 +15,9 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableAspectJAutoProxy(proxyTargetClass = true, exposeProxy = true)
 @MapperScan("com.hjw.mapper")
+@EnableTransactionManagement
+@EnableAspectJAutoProxy(proxyTargetClass = true, exposeProxy = true)
 public class ActivityProviderDemoApplication {
 
     public static void main(String[] args) {

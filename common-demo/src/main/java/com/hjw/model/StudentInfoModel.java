@@ -2,9 +2,7 @@ package com.hjw.model;
 
 import com.hjw.base.BaseModel;
 
-import java.io.Serial;
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * @PackageClassName: com.hjw.model.TeacherInfoModel
@@ -14,7 +12,6 @@ import java.util.Date;
  */
 public class StudentInfoModel extends BaseModel implements Serializable {
 
-    @Serial
     private static final long serialVersionUID = -6249077613709462017L;
     
     private Long id;

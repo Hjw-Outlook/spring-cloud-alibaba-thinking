@@ -13,4 +13,5 @@ public interface ActivityInfoService {
     ActivityInfo searchTeacherInfoById(Long id);
 
 
+    ActivityInfo insertActivityInfo();
 }

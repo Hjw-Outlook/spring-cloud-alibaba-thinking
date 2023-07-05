@@ -25,4 +25,9 @@ public class TeacherInfoController {
     public String teachStudent(@RequestParam(required = false) Long id) {
         return teacherInfoFeignService.teachStudent(id);
     }
+
+    @GetMapping("teacherWorkingBySeata")
+    public String teacherWorking(){
+        return teacherInfoFeignService.teacherWorking();
+    }
 }

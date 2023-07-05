@@ -26,4 +26,9 @@ public class TestPaperInfoController {
         return testPaperInfoService.searchTestPaperInfoById(id);
     }
 
+    @GetMapping("insertTestPaperInfo")
+    public TestPaperInfo insertTestPaperInfo() {
+        return testPaperInfoService.insertTestPaperInfo();
+    }
+
 }
