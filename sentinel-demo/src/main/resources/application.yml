@@ -1,0 +1,15 @@
+server:
+  port: 9097
+spring:
+  application:
+    name: sentinel-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+    sentinel: # sentinel配置
+      enabled: true
+      transport:
+        dashboard: localhost:8849
